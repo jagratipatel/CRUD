@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link } from 'react-router-dom';
 import './posts.css';
 import Edit from './edit'
 
@@ -37,7 +36,6 @@ class Posts extends Component {
                         <div id="controls">
                             <button className="btn" onClick={() => { this.handelDelete(this.props.id) }}>Delete</button>
                             <button className="btn" onClick={this.handelClick}>Edit</button>
-                            <Link to="/writepost" className="btn">write post</Link>
                         </div>
                     </div>
                 }
