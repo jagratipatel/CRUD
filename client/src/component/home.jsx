@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Posts from './posts';
-
+import {Link } from 'react-router-dom';
 import './home.css';
 
 class Home extends Component {
@@ -31,6 +31,7 @@ class Home extends Component {
         return (
             <div id="read">
                 <div id="showPost">
+                     <button className="btn1"><Link to="/writepost" className="btn1">write post</Link></button>
                     {this.state.data.map(post => <Posts data={post} key={post._id} id={post._id} edit={this.state.edit}  />)}
                 </div>
             </div >
